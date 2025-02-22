@@ -1,0 +1,28 @@
+//Intersection of Two Arrays 2
+class Solution 
+{
+    public int[] intersect(int[] nums1, int[] nums2) 
+    {
+        ArrayList<Integer> res = new ArrayList<Integer>();
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        int i1 = 0, i2 = 0;
+        while(i1 < nums1.length && i2 < nums2.length)
+        {
+            if(nums1[i1] < nums2[i2])
+                i1++;
+            else if(nums1[i1] > nums2[i2])
+                i2++;
+            else if(nums1[i1] == nums2[i2])
+            {
+                res.add(nums1[i1]);
+                i1++;
+                i2++;
+            }
+        }
+        int[] result = new int[res.size()];
+        for(int i = 0; i < res.size(); i++)
+            result[i] = res.get(i);
+        return result;
+    }
+}
