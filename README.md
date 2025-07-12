@@ -5,14 +5,12 @@ My personal goal is to solve **at least 2 problems every day** to strengthen my 
 
 All solutions are organized by **date**, and can be found in the [`coding/`](https://github.com/Vasantha-Meghana/repo-coding-challenges/tree/main/coding) folder.
 
----
 
 ## Languages Used
 
 - Java
 - Python
 
----
 
 ## Commitment
 
